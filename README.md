@@ -66,13 +66,17 @@ The project employs three models:
     conda env create -f environment.yml
     conda activate NLP
     ```
+3. Download Spacy model to avoid errors:
+    ```sh
+    python -m spacy download en
+    ```
 
-3. Run `main.py` to create, train models, and evaluate them. Change the first parameter `train_bert` to `True` to begin training the BERT model instead of loading pre-trained weights:
+4. Run `main.py` to create, train models, and evaluate them. Change the first parameter `train_bert` to `True` to begin training the BERT model instead of loading pre-trained weights:
     ```sh
     python main.py
     ```
 
-4. Detailed training processes for BERT are shown in the Kaggle notebook (recommended!).
+5. Detailed training processes for BERT are shown in the Kaggle notebook (recommended!).
 
 ### Before Running
 - The program defaults to loading the pre-trained BERT model rather than training from scratch, which may take more than 1 hour on a GPU (P100) provided by Kaggle.
